@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="le6.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!--CSS RESET-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="menu-activea">
+        <h1>Menu</h1>
+        <ul>
+            <li id="city">查看全球重要城市时间</li>
+            <li id='stuff'>中国老黄历</li>
+            <li id="pi">彩虹屁</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="box1">
+                <input type="text" value="请输入主要城市名" id="input1">
+                <input type="submit" value="Updata" class="add1 addbgc1">
+                <div class="wei">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="box2">
+                <input type="text" value="时间，如:2021-08-30" id="input2">
+                <input type="submit" value="Search" class="add2 addbgc2">
+                <div class="wei">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="box3">
+                <input type="text" value="点击获得彩虹屁" id="input3">
+                <input type="submit" value="Gain" class="add3 addbgc3">
+                <div class="wei">
+                    <ul></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="jquery-min.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="jquery-min.js"><\/script>')</script>
+    <script src="le6.js"></script>
+    <script type="text/javascript">
+            (function () {
+                var nav = $('nav'),
+                    menu = $('nav h1'),
+                    main = $('main'),
+                    open = false,
+                    hover = false;
+
+                menu.on('click', function () {
+                    open = !open ? true : false;
+                    nav.toggleClass('menu-active');
+                    main.toggleClass('menu-active');
+                    nav.removeClass('menu-hover');
+                    main.removeClass('menu-hover');
+                    console.log(open);
+                });
+                menu.hover(
+                    function () {
+                        if (!open) {
+                            nav.addClass('menu-hover');
+                            main.addClass('menu-hover');
+                        }
+                    }, function () {
+                        nav.removeClass('menu-hover');
+                        main.removeClass('menu-hover');
+                    }
+                );
+            })();
+    </script>
+</body>
+
+</html>

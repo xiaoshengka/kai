@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ccc;
+}
+.box1{
+    display: inline-block;
+    width: 680px;
+    height: 600px;
+    margin: 0px auto;
+    background-color: rgb(47,61,74);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(47,61,74);
+    margin-top: 50px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.box2{
+    display: none;
+    width: 680px;
+    height: 600px;
+    margin: 0px auto;
+    background-color: rgb(58, 66, 112);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(47,61,74);
+    margin-top: 50px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.box3{
+    display: none;
+    width: 680px;
+    height: 600px;
+    margin: 0px auto;
+    background-color: rgb(81, 58, 112);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(47,61,74);
+    margin-top: 50px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#input1{
+    width: 250px;
+    height: 40px;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    padding-left: 25px;
+    color: #ccc;
+    position: absolute;
+    left: 170px;
+    top: 20px;
+}
+#input2{
+    width: 250px;
+    height: 40px;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    padding-left: 25px;
+    color: #ccc;
+    position: absolute;
+    left: 170px;
+    top: 20px;
+}
+#input3{
+    width: 250px;
+    height: 40px;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 18px;
+    text-align: center;
+    border:none;
+    outline: none;
+    padding-left: 25px;
+    color: black;
+    position: absolute;
+    left: 170px;
+    top: 20px;
+}
+.add1,
+.add2,
+.add3{
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    left: 420px;
+    width: 70px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: none;
+    border: none;
+}
+.addbgc1{
+    background-color: skyblue;
+}
+.addbgc2{
+    background-color: rgb(84, 199, 214);
+}
+.addbgc3{
+    background-color: rgb(135, 235, 218);
+}
+.wei{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+.itli{
+    width: 500px;
+    line-height: 25px;
+    list-style: none;
+    margin: 20px 0 0 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.libgc1{
+    background-color: skyblue;
+}
+.libgc2{
+    background-color: rgb(84, 199, 214);
+}
+.libgc3{
+    background-color: rgb(135, 235, 218);
+}
+a{
+    float: right;
+    margin-right: 10px;
+}
